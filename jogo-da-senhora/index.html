@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topBar">
+        <h2 class="logo">Jogo da Velha</h2>
+        <img src="img/reiniciar.png" onclick="reiniciar()">
+    </div>
+    <div class="container">
+        <p class="btn" onclick="action(1)" id="posicao1"></p>
+        <p class="btn" onclick="action(2)" id="posicao2"></p>
+        <p class="btn" onclick="action(3)" id="posicao3"></p>
+        <p class="btn" onclick="action(4)" id="posicao4"></p>
+        <p class="btn" onclick="action(5)" id="posicao5"></p>
+        <p class="btn" onclick="action(6)" id="posicao6"></p>
+        <p class="btn" onclick="action(7)" id="posicao7"></p>
+        <p class="btn" onclick="action(8)" id="posicao8"></p>
+        <p class="btn" onclick="action(9)" id="posicao9"></p>
+    </div>
+    <div id="meuModal" class="modal">
+        <div class="centralizarComponentesModal">
+            <p class="backgroundModalItens" id="vencedor">GANHOU!!!</p>
+            <button class="backgroundModalItens" onclick="esconderModal()">Continuar</button>
+        </div>
+    </div>
+</body>
+</html>

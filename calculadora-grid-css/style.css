@@ -1,0 +1,95 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand SC';
+    font-weight: bolder;
+    font-size: 20;
+}
+
+.app{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(0, 0, 0);
+}
+
+.calculadora-container{
+    display: grid;
+    background-image: linear-gradient(to left top,#000000, rgba(0, 255, 0, 0.119) 99%);
+    width: 400px;
+    height: 580px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "v"
+                         "b";
+    border-radius: 10px;                         
+}
+
+.calculadora-container:hover{
+    box-shadow: 2px 2px 4px rgb(0, 255, 0);                   
+}
+
+.visor{
+    grid-area: 'v';
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: rgb(0, 255, 0);
+}
+
+.botoes{
+    grid-area: 'b';
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "bh bh"
+                         "bm bv";
+}
+
+.botoesHorizontal{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.botoesVertical{
+    grid-area: bv;
+    display: grid;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.botoesMeio{
+    grid-area: bm;
+    display: grid;
+}
+
+.botoesMeioInternos{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.btn{
+    color: rgb(0, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    color: rgb(0, 255, 0);
+    border-radius: 10px;
+    background-color: rgba(0, 255, 0, 0.119);
+}
+
+.resultado{
+    margin-top: 35px;
+    margin-left: 20px;
+    color: rgb(0, 255, 0);
+}
