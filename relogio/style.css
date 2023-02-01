@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 36, 36);
+}
+
+span{
+    color: blue;
+    font-size: 12rem;
+    font-family: 'Wallpoet', cursive;
+}
+
+.relogio{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border: 3px solid blue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
